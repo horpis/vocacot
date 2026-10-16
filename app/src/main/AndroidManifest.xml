@@ -11,6 +11,7 @@
         android:theme="@style/Theme.Vocacot">
         <activity
             android:name=".MainActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden|keyboard|navigation|uiMode|locale|layoutDirection"
             android:exported="true"
             android:theme="@style/Theme.Vocacot">
             <intent-filter>
