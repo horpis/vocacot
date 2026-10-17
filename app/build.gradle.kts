@@ -6,12 +6,12 @@ plugins {
 
 android {
     namespace = "com.vocacot"
-    compileSdk = 34
+    compileSdk = 36
 
     defaultConfig {
         applicationId = "com.vocacot"
         minSdk = 31
-        targetSdk = 34
+        targetSdk = 36
         versionCode = 1
         versionName = "1.0"
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
@@ -44,9 +44,15 @@ dependencies {
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
     implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.8.7")
-    implementation("androidx.lifecycle:lifecycle-runtime-compose:2.8.7") // или новее
+    implementation("androidx.lifecycle:lifecycle-runtime-compose:2.8.7") // или новееdependencies 
+    implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.8.7")
     implementation("androidx.activity:activity-compose:1.9.3")
+    // уже есть: lifecycle, activity-compose
+    implementation("androidx.datastore:datastore-preferences:1.1.1")
+    implementation("androidx.navigation:navigation-compose:2.8.3")
+    implementation("androidx.appcompat:appcompat:1.7.0") 
 }
+
 android {
     sourceSets {
         getByName("main") {
